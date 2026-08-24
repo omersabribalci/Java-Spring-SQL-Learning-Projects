@@ -1,56 +1,18 @@
-# SQL Sorgu Alıştırmaları
+# SQL DDL Project
 
-Bu hafta SQL sorguları üzerine çalışıyorsunuz. Bugünkü alıştırmada sizin için hazırladığımız veritabanında aşağıda istediğimiz sonuçları elde etmenize yarayan SQL sorgularını oluşturacaksınız.
+## Overview
+This project demonstrates the core concepts of SQL DDL. It includes practical exercises and examples to build a strong understanding of these fundamental principles.
 
-# Proje Kurulumu
-Projeyi forklayın ve clonlayın. Tamamladığınızda da pushlayın.
+## Project Structure
+- Source code is organized into logical packages reflecting the concepts learned.
+- Where applicable, tests are included to verify functionality.
 
-## Kütüphane Bilgi Sistemi
+## Key Concepts Applied
+- **SQL DDL**: Practical implementation of the topic requirements and related techniques.
+- **Clean Code**: Adhering to naming conventions and project structures.
 
-* Spring Data Jpa ve Postgresql driver dependencyleri sisteme ekleyiniz.
-Veri tabanına bağlanabilmek için :
-* `application.properties` dosyasında `spring.datasource.username` karşısına veritabanını bağlanmak için kullandığınız kullanıcı ismini MUTLAKA GİRİNİZ.
-* `application.properties` dosyasında `spring.datasource.password` karşısına veritabanını bağlanmak için kullandığınız şifreyi MUTLAKA GİRİNİZ.
-
-### Görevler
-
-	1) Veri tabanınız içerisinde doctor adında bir tablo oluşturun. 
-		Tabloda(id: bigint, name: character varying, surname: character varying, proficiency: character varying) kolonları olmalıdır.
-        id kolonu PRİMARY KEY ve auto-increment olmalıdır.	
-
-	2) Veri tabanınız içerisinde nurse adında bir tablo oluşturun. 
-		Tabloda(id: bigint, name: character varying, surname: character varying, proficiency: character varying) kolonları olmalıdır.
-        id kolonu PRİMARY KEY ve auto-increment olmalıdır.
-
-	3) Veri tabanınız içerisinde patient adında bir tablo oluşturun.
-		Tabloda(id: bigint, name: character varying, surname: character varying, email: character varying, complaint: text) kolonları olmalıdır.
-        id kolonu PRİMARY KEY ve auto-increment olmalıdır.	
-
-	4) Veri tabanınız içerisinde surgery adında bir tablo oluşturun.
-	    Tabloda(id: bigint, nurse_id: bigint, patient_id: bigint, doctor_id: bigint) kolonları olmalıdır.
-        id kolonu PRİMARY KEY ve auto-increment olmalıdır.
-		Bu tabloda nurse_id, patient_id ve doctor_id foreign key olmalıdır.
-
-	5) Veri tabanınız içerisinde operation adında bir tablo oluşturun.
-         Tabloda(id: bigint, patient_id: bigint, doctor_id: bigint) kolonları olmalıdır.
-         id kolonu PRİMARY KEY ve auto-increment olmalıdır.
-         Bu tabloda patient_id ve doctor_id foreign key olmalıdır.
-
-
-
-### ⚠️ Skorun NextGen'e Kaydedilmediyse
-
-Eğer testleri çalıştırdığın halde skorun NextGen'e kaydedilmediyse, önce fork'unun güncel olup olmadığını kontrol et:
-
-1. GitHub reponu aç.
-2. Repo **X commit ahead** ve **X commits behind** şeklinde bir uyarı gösteriyorsa, branch'in güncel değildir.
-3. **Sync fork → Update branch** adımlarını uygula.
-4. Ardından localinde şu komutu çalıştır:
-
-```bash
-   git pull
-```
-
-5. Testleri tekrar çalıştır. Bu adımdan sonra skorun güncellenmiş olacaktır.
-
-> **Not:** Bu kontrolü yapmadan tekrar tekrar test çalıştırmak sorunu çözmez; sorunun kaynağı genellikle fork'un upstream repository ile senkron olmamasıdır.
+## Usage
+To run or explore this project:
+1. Open the project in your preferred IDE (e.g., IntelliJ IDEA).
+2. Navigate to the main application class or test classes.
+3. Run the application to see the execution results.
