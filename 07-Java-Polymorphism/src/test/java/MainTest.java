@@ -33,7 +33,6 @@ public class MainTest {
     HybridCar hybridCar;
     ElectricCar electricCar;
 
-
     @BeforeEach
     void setUp() {
         car = new Car(4, "Mercedes");
@@ -146,7 +145,7 @@ public class MainTest {
         assertThat(hybridCar.getName(), instanceOf(String.class));
         assertThat(hybridCar.getDescription(), instanceOf(String.class));
         assertThat(hybridCar.getCylinders(), instanceOf(Integer.class));
-        assertThat(hybridCar.getAvgKmPerLitre(), instanceOf(Double.class))
+        assertThat(hybridCar.getAvgKmPerLitre(), instanceOf(Double.class));
         assertThat(hybridCar.getBatterySize(), instanceOf(Integer.class));
     }
 
